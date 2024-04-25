@@ -15,49 +15,75 @@
     //         document.write(i +" * "+j+" = "+tich+"<br>")
     //     }
     // }
-    function kq() {
-        let gt = 1
-        let a = +document.getElementById("a").value
-        if (a > 0) {
-            for (let i = 1; i <= a; i++) {
-                gt = gt * i
+    // function kq() {
+    //     let gt = 1
+    //     let a = +document.getElementById("a").value
+    //     if (a > 0) {
+    //         for (let i = 1; i <= a; i++) {
+    //             gt = gt * i
+    //         }
+    //         document.getElementById("gt").innerHTML = "Giai thừa của " + a + "= " + gt
+    //     } else {
+    //         document.getElementById("gt").innerText = "Số vừa nhập ko đủ đk"
+    //     }
+    // }
+    // for (let i = 1; i <= 5; i++) {
+    //     document.write("<br>")
+    //     for (let j = 1; j <= i; j++)
+    //         document.write("* ")
+    // }
+    // for (let i = 1; i <= 5; i++) {
+    //     document.write("<br>")
+    //     for (let j = 5; j >= i; j--) {
+    //         document.write("* ")
+    //     }
+    // }
+    // document.write("<br>")
+    // for (let i = 1; i <= 5; i++) {
+    //     for (let j = 1; j <= 5 - i; j++) {
+    //         document.write("&nbsp&nbsp&nbsp")
+    //     }
+    //     for (let j = 1; j <= i; j++) {
+    //         document.write("* ");
+    //     }
+    //     document.write("<br>");
+    // }
+    // for (let i = 1; i <= 5; i++) {
+    //     for (let j = 5; j >= 5-i; j--) {
+    //         document.write("* ")
+    //     }
+    //     for (let j = 5; j >= 5-i; j--) {
+    //         document.write("&nbsp&nbsp&nbsp")
+    //     }
+    //     document.write("<br>");
+    // }
+    // let number = +prompt("Nhập số: ")
+    // let count = 0
+    // for (let i = 1; i<= number; i++){
+    //     if (number % i === 0){
+    //         count++
+    //     }
+    // }
+    // if (count === 2){
+    //     alert(number + " là số nguyên tố")
+    // }else {
+    //     alert("Không phải là số nguyên tố")
+    // }
+    let demsonguyento = 0
+    let number = 2
+    while (demsonguyento < 20) {
+        let count = 0
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                count++
             }
-            document.getElementById("gt").innerHTML = "Giai thừa của " + a + "= " + gt
-        } else {
-            document.getElementById("gt").innerText = "Số vừa nhập ko đủ đk"
         }
+        if (count === 2) {
+            console.log(number + " là số nguyên tố")
+            demsonguyento++
+        }
+        number++
     }
-    for (let i = 1; i <= 5; i++) {
-        document.write("<br>")
-        for (let j = 1; j <= i; j++)
-            document.write("* ")
-    }
-    for (let i = 1; i <= 5; i++) {
-        document.write("<br>")
-        for (let j = 5; j >= i; j--) {
-            document.write("* ")
-        }
-    }
-    document.write("<br>")
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 5 - i; j++) {
-            document.write("&nbsp&nbsp&nbsp")
-        }
-        for (let j = 1; j <= i; j++) {
-            document.write("* ");
-        }
-        document.write("<br>");
-    }
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 5; j >= 5-i; j--) {
-            document.write("* ")
-        }
-        for (let j = 5; j >= 5-i; j--) {
-            document.write("&nbsp&nbsp&nbsp")
-        }
-        document.write("<br>");
-    }
-
 
 </script>
 </body>
